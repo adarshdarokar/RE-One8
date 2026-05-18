@@ -1,5 +1,4 @@
-let ul = document.querySelector('ul')
-let li = document.createElement("li")
-
-li.textContent = 'New Task'
-ul.appendChild(li)
+let h1 = document.querySelector('h1')
+h1.addEventListener('click', function(){
+h1.style.color = "green"
+})
