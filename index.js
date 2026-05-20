@@ -1,5 +1,13 @@
-let h1 = document.querySelector("h1")
+let btn = document.querySelector("#btn");
+let fileinp = document.querySelector("#fileinp");
 
-window.addEventListener("keydown", function (dets) {
-    h1.textContent = dets.key;
-})
+btn.addEventListener("click", function () {
+  fileinp.click();
+});
+
+fileinp.addEventListener("change", function (dets) {
+ const file = dets.target.files[0];
+ if(file){
+    btn.textContent = file.name;
+ }
+});
