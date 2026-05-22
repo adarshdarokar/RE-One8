@@ -1,146 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card</title>
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Gilroy";
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
 
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-      }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Gilroy";
+    }
 
-      body {
-        background-color: #222;
-      }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
 
-      #main {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 60px;
-      }
+    #tango {
+      width: 400px;
+      height: 500px;
+      background: red;
+    }
+  </style>
+</head>
 
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        padding: 25px;
-        background-color: #2b2b2b;
-        border-radius: 15px;
-        border: 1px solid #444;
-      }
+<body>
+  <div id="tango"></div>
 
-      form input {
-        width: 250px;
-        padding: 12px;
-        border-radius: 8px;
-        border: 1px solid #555;
-        background-color: #333;
-        color: white;
-        outline: none;
-      }
+  <script src="index.js"></script>
+</body>
 
-      form input::placeholder {
-        color: #aaa;
-      }
-
-      form input[type="submit"] {
-        background: linear-gradient(135deg, #4ade80, #16a34a);
-        border: none;
-        cursor: pointer;
-        font-weight: 600;
-        transition: 0.3s;
-      }
-
-      form input[type="submit"]:hover {
-        transform: scale(1.03);
-      }
-
-      .card {
-        width: 260px;
-        padding: 20px;
-        border-radius: 15px;
-        border: 1px solid #555;
-        background-color: #2b2b2b;
-        color: white;
-      }
-
-      .profile {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-bottom: 15px;
-      }
-
-      .profile img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .card h3 {
-        font-size: 22px;
-      }
-
-      .card h5 {
-        margin-top: 5px;
-        color: #aaa;
-        font-weight: 500;
-      }
-
-      .card p {
-        margin-top: 12px;
-        font-size: 12px;
-        line-height: 1.5;
-        color: #cfcfcf;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="main">
-
-      <form>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Age" />
-        <input type="email" placeholder="Email" />
-        <input type="text" placeholder="Profile Pic URL" />
-        <input type="submit" value="Create Card" />
-      </form>
-
-      <div class="card">
-
-        <div class="profile">
-          <img
-            src="https://tse4.mm.bing.net/th/id/OIP.bo4X5eBWrxTUYTB4tEY3WgHaE8?pid=Api&P=0&h=180"
-            alt=""
-          />
-        </div>
-
-        <h3>MAX</h3>
-
-        <h5>Creative Developer</h5>
-
-        <p>
-          Passionate frontend developer who loves building modern UI,
-          animations and interactive web experiences with clean design.
-        </p>
-
-      </div>
-
-    </div>
-  </body>
 </html>
