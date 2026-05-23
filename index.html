@@ -18,24 +18,41 @@
         width: 100%;
         height: 100%;
       }
-      body{
-        padding: 30px;
-      }
-      .lt{
-        text-decoration: line-through;
+      #hide{
+        display: none;
       }
     </style>
   </head>
 
   <body>
- <ul>
-  <li>apple</li>
-  <li>mango</li>
-  <li>apple</li>
-  <li>fruit</li>
-  <li>nothing</li>
- </ul>
+   
+    <form>
+      <input id="name" type="text" placeholder="name" />
+      <div id="hide">
 
-  <script src="index.js"></script>
+     <br>
+     <small>your name should be greater than 2 characters.</small>
+
+      </div>
+      <br /><br />
+      <input type="text" placeholder="email" />
+      <br /><br />
+      <input type="text" placeholder="password" />
+      <br /><br />
+      <select>
+        <option value="male">male</option>
+
+        <option value="female">female</option>
+
+        <option value="others">others</option>
+      </select>
+      <br />
+      <br />
+      <textarea placeholder="Tell us about..."></textarea>
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+     <script src="index.js"></script>
   </body>
 </html>
