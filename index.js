@@ -1,33 +1,22 @@
-// setTimeout(function(){
-//   console.log("hollo");
-  
-// }, 5000);
+// localStorage.setItem("name", "sadiesink")
 
-// ek bar chalta ha //
-
-
-
-// setInterval(function(){
-// console.log("hello lome");
-
-// },4000)
-
-// baar baar chalta ha //
+// save karna value //
 
 
 
 
-// let chalo = 10;
-// let intro = setInterval(function(){
-//   if(chalo >=1){
-//     chalo--;
-//     console.log(chalo);
-    
-//   } else
-//     clearInterval(intro)
-// },1000)
+// let val = localStorage.getItem("name", "sadiesink")
 
-//counting 9-0 //
+// value nikalna//
 
 
 
+
+// localStorage.removeItem("name", "sadiesink")
+
+// value ko remove karna //
+
+
+
+
+ 
