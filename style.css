@@ -1,0 +1,123 @@
+/* ROOT VARIABLES */
+
+:root {
+
+  /* LIGHT THEME */
+
+  --bg-light: #ffffff;
+  --text-light: #1a1a1a;
+
+  /* DARK THEME */
+
+  --bg-dark: #1e1e1e;
+  --text-dark: #f5f5f5;
+
+  /* BUTTON */
+
+  --btn-bg: #4f46e5;
+  --btn-hover: #3730a3;
+}
+
+
+
+/* LIGHT MODE */
+
+body.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+
+
+/* DARK MODE */
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+
+
+/* BODY */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+
+/* CONTAINER */
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
+}
+
+
+
+/* HEADING */
+
+h1 {
+  font-size: 65px;
+  margin: 0;
+
+  font-weight: 800;
+  letter-spacing: -2px;
+
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 10px rgba(79, 70, 229, 0.3),
+    0 0 30px rgba(79, 70, 229, 0.2);
+}
+
+
+
+/* BUTTON */
+
+button {
+  padding: 16px 40px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 14px;
+
+  background-color: var(--btn-bg);
+  color: white;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 10px 25px rgba(79, 70, 229, 0.35);
+
+  letter-spacing: 1px;
+}
+
+
+
+/* BUTTON HOVER */
+
+button:hover {
+  background-color: var(--btn-hover);
+
+  transform: translateY(-5px) scale(1.05);
+
+  box-shadow:
+    0 18px 35px rgba(79, 70, 229, 0.45);
+}
