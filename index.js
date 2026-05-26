@@ -153,51 +153,51 @@
 
 const users = [
     {
-        name: "amisha rathore",
-        pic: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop",
-        bio: "silent chaos in a loud world 🖤🕊 | not for everyone",
-    },
-
-    {
         name: "sadie sink",
-        pic: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
+        pic: "https://tse3.mm.bing.net/th/id/OIP.lWhElHevtIK-8vpAiTZ2tQHaEK?pid=Api&P=0&h=180",
         bio: "red hair. deep thoughts. soft chaos ✨",
     },
 
     {
-        name: "emma stone",
+        name: "finn wolfhard",
         pic: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-        bio: "living between coffee and late night vibes ☕",
+        bio: "music, mystery and upside down vibes 🎸",
     },
 
     {
-        name: "jenna ortega",
-        pic: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=800&auto=format&fit=crop",
-        bio: "pretty eyes & dangerous mind 🕷",
-    },
-
-    {
-        name: "anya taylor",
-        pic: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
-        bio: "made of cinema, mystery and midnight energy 🌙",
-    },
-
-    {
-        name: "alex rivera",
-        pic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
-        bio: "lost in music, found in dreams 🎧",
-    },
-
-    {
-        name: "sophia lee",
+        name: "erica sinclair",
         pic: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
-        bio: "collecting memories like polaroids 📸",
+        bio: "you can't spell america without erica 😎",
     },
 
     {
-        name: "noah walker",
+        name: "lucas sinclair",
+        pic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+        bio: "max level loyalty and basketball energy 🏀",
+    },
+
+    {
+        name: "steve harrington",
         pic: "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=800&auto=format&fit=crop",
-        bio: "half human half overthinking machine ⚡",
+        bio: "babysitter by accident. legend by choice 😎",
+    },
+
+    {
+        name: "dustin henderson",
+        pic: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
+        bio: "science + chaos + friendship combo 🔥",
+    },
+
+    {
+        name: "mili brwon",
+        pic: "https://i.pinimg.com/originals/04/ee/c9/04eec90c9fc692c01fb2b67257b9cd73.jpg",
+        bio: "the upside down remembers everything 🕷",
+    },
+
+    {
+        name: "hopper",
+        pic: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
+        bio: "coffee, cops and protecting hawkins ☕",
     },
 ];
 
@@ -255,11 +255,20 @@ function showUsers(arr) {
 showUsers(users);
 
 
-let inp = document.querySelector(".inp")
+let inp = document.querySelector(".inp");
+
 inp.addEventListener("input", function () {
+
     let newUsers = users.filter((user) => {
-        return user.name.startsWith(inp.value)
-    })
-    document.querySelector(".card").innerHTML = "";
-    showUsers(newUsers)
-})
+
+        return user.name
+            .toLowerCase()
+            .startsWith(inp.value.toLowerCase());
+
+    });
+
+    document.querySelector(".cards-container").innerHTML = "";
+
+    showUsers(newUsers);
+
+});
