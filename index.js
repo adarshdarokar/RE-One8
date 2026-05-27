@@ -17,6 +17,7 @@
 
 //  json.stringify  //
 
+
 // ======================
 // SYSTEM THEME FUNCTION
 // ======================
@@ -151,124 +152,200 @@
 
 
 
-const users = [
-    {
-        name: "sadie sink",
-        pic: "https://tse3.mm.bing.net/th/id/OIP.lWhElHevtIK-8vpAiTZ2tQHaEK?pid=Api&P=0&h=180",
-        bio: "red hair. deep thoughts. soft chaos ✨",
-    },
+// const users = [
+//     {
+//         name: "sadie sink",
+//         pic: "https://tse3.mm.bing.net/th/id/OIP.lWhElHevtIK-8vpAiTZ2tQHaEK?pid=Api&P=0&h=180",
+//         bio: "red hair. deep thoughts. soft chaos ✨",
+//     },
 
-    {
-        name: "finn wolfhard",
-        pic: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
-        bio: "music, mystery and upside down vibes 🎸",
-    },
+//     {
+//         name: "finn wolfhard",
+//         pic: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+//         bio: "music, mystery and upside down vibes 🎸",
+//     },
 
-    {
-        name: "erica sinclair",
-        pic: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
-        bio: "you can't spell america without erica 😎",
-    },
+//     {
+//         name: "erica sinclair",
+//         pic: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+//         bio: "you can't spell america without erica 😎",
+//     },
 
-    {
-        name: "lucas sinclair",
-        pic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
-        bio: "max level loyalty and basketball energy 🏀",
-    },
+//     {
+//         name: "lucas sinclair",
+//         pic: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop",
+//         bio: "max level loyalty and basketball energy 🏀",
+//     },
 
-    {
-        name: "steve harrington",
-        pic: "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=800&auto=format&fit=crop",
-        bio: "babysitter by accident. legend by choice 😎",
-    },
+//     {
+//         name: "steve harrington",
+//         pic: "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=800&auto=format&fit=crop",
+//         bio: "babysitter by accident. legend by choice 😎",
+//     },
 
-    {
-        name: "dustin henderson",
-        pic: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
-        bio: "science + chaos + friendship combo 🔥",
-    },
+//     {
+//         name: "dustin henderson",
+//         pic: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop",
+//         bio: "science + chaos + friendship combo 🔥",
+//     },
 
-    {
-        name: "mili brwon",
-        pic: "https://i.pinimg.com/originals/04/ee/c9/04eec90c9fc692c01fb2b67257b9cd73.jpg",
-        bio: "the upside down remembers everything 🕷",
-    },
+//     {
+//         name: "mili brwon",
+//         pic: "https://i.pinimg.com/originals/04/ee/c9/04eec90c9fc692c01fb2b67257b9cd73.jpg",
+//         bio: "the upside down remembers everything 🕷",
+//     },
 
-    {
-        name: "hopper",
-        pic: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
-        bio: "coffee, cops and protecting hawkins ☕",
-    },
-];
+//     {
+//         name: "hopper",
+//         pic: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
+//         bio: "coffee, cops and protecting hawkins ☕",
+//     },
+// ];
 
-function showUsers(arr) {
+// function showUsers(arr) {
 
-    const container = document.querySelector(".cards-container");
+//     const container = document.querySelector(".cards-container");
 
-    arr.forEach(function (user) {
+//     arr.forEach(function (user) {
 
-        // CARD
-        let card = document.createElement("div");
-        card.className = "card";
+//         // CARD
+//         let card = document.createElement("div");
+//         card.className = "card";
 
-        // IMAGE
-        let img = document.createElement("img");
-        img.src = user.pic;
-        img.className = "bg-img";
+//         // IMAGE
+//         let img = document.createElement("img");
+//         img.src = user.pic;
+//         img.className = "bg-img";
 
-        // OVERLAY
-        let overlay = document.createElement("div");
-        overlay.className = "overlay";
+//         // OVERLAY
+//         let overlay = document.createElement("div");
+//         overlay.className = "overlay";
 
-        // CONTENT
-        let content = document.createElement("div");
-        content.className = "content";
+//         // CONTENT
+//         let content = document.createElement("div");
+//         content.className = "content";
 
-        // TITLE
-        let title = document.createElement("h2");
-        title.innerText = user.name;
+//         // TITLE
+//         let title = document.createElement("h2");
+//         title.innerText = user.name;
 
-        // DESC
-        let desc = document.createElement("p");
-        desc.innerText = user.bio;
+//         // DESC
+//         let desc = document.createElement("p");
+//         desc.innerText = user.bio;
 
-        // BUTTON
-        let btn = document.createElement("button");
-        btn.className = "follow-btn";
-        btn.innerText = "Follow";
+//         // BUTTON
+//         let btn = document.createElement("button");
+//         btn.className = "follow-btn";
+//         btn.innerText = "Follow";
 
-        // APPEND
-        content.appendChild(title);
-        content.appendChild(desc);
-        content.appendChild(btn);
+//         // APPEND
+//         content.appendChild(title);
+//         content.appendChild(desc);
+//         content.appendChild(btn);
 
-        card.appendChild(img);
-        card.appendChild(overlay);
-        card.appendChild(content);
+//         card.appendChild(img);
+//         card.appendChild(overlay);
+//         card.appendChild(content);
 
-        container.appendChild(card);
+//         container.appendChild(card);
 
-    });
+//     });
 
+// }
+
+// showUsers(users);
+
+
+// let inp = document.querySelector(".inp");
+
+// inp.addEventListener("input", function () {
+
+//     let newUsers = users.filter((user) => {
+
+//         return user.name
+//             .toLowerCase()
+//             .startsWith(inp.value.toLowerCase());
+
+//     });
+
+//     document.querySelector(".cards-container").innerHTML = "";
+
+//     showUsers(newUsers);
+
+// });
+
+// searching cards //
+
+
+
+
+
+// lexical scoping //
+
+
+// let a = 12
+
+// function abcd() {
+//     console.log(a);
+// }
+
+// function defg() {
+//     let a = 13
+//     abcd()
+// }
+// defg()
+
+
+
+// Closers //
+
+// function abcd(){
+//     let a = 12 
+//     return function (){
+//         console.log(a);
+
+//     }
+// } 
+// abcd()
+
+
+// closers example //
+
+// function clickLimiter() {
+//     let click = 0;
+//     return function () {
+//         if (click < 5) {
+//             click++
+//             console.log(`clicked:${click} times`);
+//         } else {
+//             console.error("Limite Exceeded, Try after some time");
+
+//         }
+
+//     }
+// }
+
+
+// let fnc = clickLimiter()
+// fnc()
+// fnc()
+// fnc()
+// fnc()
+// fnc()
+
+
+// Another closers examples #toaster//
+
+
+
+
+let obj = {
+    name: "sadie sink",
+    age: 23,
+    sayName: function () {
+        console.log(this);
+
+    }
 }
+obj.sayName()
 
-showUsers(users);
-
-
-let inp = document.querySelector(".inp");
-
-inp.addEventListener("input", function () {
-
-    let newUsers = users.filter((user) => {
-
-        return user.name
-            .toLowerCase()
-            .startsWith(inp.value.toLowerCase());
-
-    });
-
-    document.querySelector(".cards-container").innerHTML = "";
-
-    showUsers(newUsers);
-
-});
