@@ -334,18 +334,36 @@
 // fnc()
 
 
-// Another closers examples #toaster//
+// this keyword /  //
 
 
 
 
-let obj = {
-    name: "sadie sink",
-    age: 23,
-    sayName: function () {
-        console.log(this);
+// let obj = {
+//     name: "sadie sink",
+//     age: 23,
+//     sayName: function () {
+//         console.log(this);
 
-    }
-}
-obj.sayName()
+//     }
+// }
+// obj.sayName()
 
+
+
+
+
+
+// event handler //
+
+
+// document.querySelector('h1').addEventListener("click", function () {
+//     console.log((this.style.color = "red"));
+
+// })
+
+
+
+
+
+ 
