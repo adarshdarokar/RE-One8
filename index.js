@@ -365,5 +365,15 @@
 
 
 
+// oobj //
 
+function CreateBiscuits (name,price,qnty,company,category){
+    this.name = "Parle-G";
+    this.price = 5;
+    this.qnty = 8;
+    this.company = "Parle"
+    this.category = "regular"
+}
  
+let biscuit1 = new CreateBiscuits("Oreo",10,5,"nothing","biscuts") 
+let biscuit2 = new CreateBiscuits("Parle",10,5,"nothing","biscuts") 
