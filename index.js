@@ -365,15 +365,36 @@
 
 
 
-// oobj //
+// oobj | "construtor" | //
 
-function CreateBiscuits (name,price,qnty,company,category){
-    this.name = "Parle-G";
-    this.price = 5;
-    this.qnty = 8;
-    this.company = "Parle"
-    this.category = "regular"
+// function CreateBiscuits (name,price,qnty,company,category){
+//     this.name = "Parle-G";
+//     this.price = 5;
+//     this.qnty = 8;
+//     this.company = "Parle"
+//     this.category = "regular"
+// }
+
+// let biscuit1 = new CreateBiscuits("Oreo",10,5,"nothing","biscuts") 
+// let biscuit2 = new CreateBiscuits("Parle",10,5,"nothing","biscuts") 
+
+
+// oobj / prototype  //
+
+
+function CreateBiscuits(name, price, color, company) {
+    this.name = name;
+    this.price = price;
+    this.color = color;
+    this.company = company;
 }
- 
-let biscuit1 = new CreateBiscuits("Oreo",10,5,"nothing","biscuts") 
-let biscuit2 = new CreateBiscuits("Parle",10,5,"nothing","biscuts") 
+CreateBiscuits.prototype.write = function (text) {
+    let h1 = document.createElement("h1")
+    h1.textContent = text
+    h1.style.color = this.color;
+
+    document.body.append(h1)
+}
+let biscuit1 = new CreateBiscuits("Oreo", 10, "black", "biscuts")
+let biscuit2 = new CreateBiscuits("Parle", 10, "red", "biscuts")
+
