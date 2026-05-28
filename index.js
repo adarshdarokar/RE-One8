@@ -379,22 +379,61 @@
 // let biscuit2 = new CreateBiscuits("Parle",10,5,"nothing","biscuts") 
 
 
+
+
+
+
 // oobj / prototype  //
 
 
-function CreateBiscuits(name, price, color, company) {
-    this.name = name;
-    this.price = price;
-    this.color = color;
-    this.company = company;
-}
-CreateBiscuits.prototype.write = function (text) {
-    let h1 = document.createElement("h1")
-    h1.textContent = text
-    h1.style.color = this.color;
+// function CreateBiscuits(name, price, color, company) {
+//     this.name = name;
+//     this.price = price;
+//     this.color = color;
+//     this.company = company;
+// }
+// CreateBiscuits.prototype.write = function (text) {
+//     let h1 = document.createElement("h1")
+//     h1.textContent = text
+//     h1.style.color = this.color;
 
-    document.body.append(h1)
-}
-let biscuit1 = new CreateBiscuits("Oreo", 10, "black", "biscuts")
-let biscuit2 = new CreateBiscuits("Parle", 10, "red", "biscuts")
+//     document.body.append(h1)
+// }
+// let biscuit1 = new CreateBiscuits("Oreo", 10, "black", "biscuts")
+// let biscuit2 = new CreateBiscuits("Parle", 10, "red", "biscuts")
+
+
+
+
+
+
+//     CLASSES     //
+
+// class CreatePen {
+//     constructor(name, company, price, color) {
+//         this.name = name
+//         this.company = company
+//         this.price = price
+//         this.color = color
+//     }
+
+//     erase() {
+//         document.body.querySelectorAll("h1").forEach((elem) => {
+//             if (elem.style.color === this.color) {
+//                 elem.remove()
+//             }
+//         })
+//     }
+
+//     write(text) {
+//         let h1 = document.createElement("h1")
+//         h1.textContent = text;
+//         h1.style.color = this.color;
+//         document.body.appendChild(h1)
+//     }
+// }
+
+
+// let p1 = new CreatePen("montex", "montex", 10, "blue")
+// let p2 = new CreatePen("montex", "Flair", 5, "black")
 
