@@ -437,3 +437,67 @@
 // let p1 = new CreatePen("montex", "montex", 10, "blue")
 // let p2 = new CreatePen("montex", "Flair", 5, "black")
 
+
+
+
+
+
+
+//    Classes Part - 2   // extends and super //
+
+class User {
+    constructor(name, address, username, email) {
+        this.name = name;
+        this.address = address;
+        this.username = username;
+        this.email = email;
+        this.role = "user";
+    }
+
+
+ checkRole() {
+    console.log(`you are a ${this.role}`);
+}
+
+    write(text) {
+        let h1 = document.createElement("h1");
+        h1.textContent = `${this.name} : ${text}`;
+        document.body.appendChild(h1);
+    }
+}
+
+class Admin extends User {
+    constructor(name, address, username, email, role) {
+        super(name, address, username, email);
+        this.role = "admin";
+    }
+
+    remove() {
+        document.querySelectorAll("h1").forEach(function (elem) {
+            elem.remove();
+        });
+    }
+}
+
+let u1 = new User(
+    "sadie",
+    "america",
+    "sadiesink",
+    "sadie@gmail.com"
+);
+
+let u2 = new Admin(
+    "adarsh",
+    "america",
+    "sadiesink",
+    "sadie@gmail.com",
+    "max"
+);
+
+let u3 = new Admin(
+    "tanu",
+    "america",
+    "sadiesink",
+    "sadie@gmail.com",
+    "max"
+);
