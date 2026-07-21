@@ -1,126 +1,142 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ---------- Reset ---------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding & border in element size */
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------- Global ---------- */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
+/* ---------- Header ---------- */
+
+header{
+    position: absolute; /* Place navbar over hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Keep above video */
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 35px 40px;
-  background: transparent;
+/* ---------- Navbar ---------- */
+
+nav{
+    display: flex;
+    justify-content: space-between; /* Left | Center | Right */
+    align-items: center; /* Vertical alignment */
+    padding: 35px 40px;
+    background: transparent;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
+nav a{
+    text-decoration: none; /* Remove underline */
+    color: white;
 }
 
-.center p {
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
+/* ---------- Logo ---------- */
+
+.center p{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.left {
-  display: flex;
-  gap: 20px;
+/* ---------- Navigation Groups ---------- */
+
+.left{
+    display: flex;
+    gap: 20px; /* Space between links */
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
-
-.right {
-  display: flex;
-  gap: 50px;
-}
-
-.hero {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Tablet */
-@media (max-width:768px){
-
-  nav{
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .left,
-  .right{
+.center{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+}
+
+.right{
+    display: flex;
+    gap: 50px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero{
     width: 100%;
-  }
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+}
 
-  .center{
-    order: -1;
-  }
+.hero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fill container without distortion */
+}
 
-  nav a{
-    font-size: 14px;
-  }
+/* ---------- Tablet (≤768px) ---------- */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction: column; /* Stack items */
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .left,
+    .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Wrap if needed */
+        gap: 15px;
+        width: 100%;
+    }
+
+    .center{
+        order: -1; /* Move logo to top */
+    }
+
+    nav a{
+        font-size: 14px;
+    }
 
 }
 
-/* Small Mobile */
+/* ---------- Mobile (≤480px) ---------- */
+
 @media (max-width:480px){
 
-  nav{
-    padding: 15px 10px;
-    gap: 15px;
-  }
+    nav{
+        padding: 15px 10px;
+        gap: 15px;
+    }
 
-  .left,
-  .right{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
+    .left,
+    .right{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 
-  .center p{
-    font-size: 20px;
-  }
+    .center p{
+        font-size: 20px;
+    }
 
-  nav a{
-    font-size: 13px;
-  }
+    nav a{
+        font-size: 13px;
+    }
 
-  .hero video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    .hero video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 }
