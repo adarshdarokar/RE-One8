@@ -14,12 +14,14 @@ body{
 
 /* ---------- Header ---------- */
 
-header{
-    position: absolute; /* Place navbar over hero */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100; /* Keep above video */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 50px;
+
+  position: relative;
 }
 
 /* ---------- Navbar ---------- */
