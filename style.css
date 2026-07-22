@@ -45,10 +45,16 @@ nav a {
 
 /* ---------- Logo ---------- */
 
-.center p {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo{
+    height:50px;      /* Desktop */
+    width:auto;
+    display:block;
 }
 
 /* ---------- Navigation Groups ---------- */
