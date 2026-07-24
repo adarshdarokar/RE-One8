@@ -3,7 +3,7 @@ const products = [
         id: 1,
         name: "Boom Rush",
         price: 9999,
-        images: ["shoe1.webp", "shoe1.webp"],
+        images: ["shoe1.webp", "shoe1.2.webp"],
         rating: 4.8,
         reviews: 128,
         description: "Lightweight running shoes engineered for comfort, speed and all-day performance.",
@@ -13,7 +13,7 @@ const products = [
         id: 2,
         name: "Quiet Edge",
         price: 10999,
-        images: ["shoe2.webp", "shoe2.webp"],
+        images: ["shoe2.webp", "shoe2.2.webp"],
         rating: 4.9,
         reviews: 214,
         description: "Premium lifestyle sneakers with a modern silhouette and superior cushioning.",
@@ -23,7 +23,7 @@ const products = [
         id: 3,
         name: "Seam XVIII X",
         price: 6999,
-        images: ["shoe3.webp", "shoe3.webp"],
+        images: ["shoe3.webp", "shoe3.3.webp"],
         rating: 4.7,
         reviews: 96,
         description: "A sleek everyday sneaker designed for comfort and effortless style.",
@@ -33,7 +33,7 @@ const products = [
         id: 4,
         name: "Seam Pavilion",
         price: 7999,
-        images: ["shoe4.webp", "shoe4.webp"],
+        images: ["shoe4.webp", "shoe4.1.webp"],
         rating: 4.6,
         reviews: 82,
         description: "Versatile sports shoes built with breathable materials and durable grip.",
@@ -43,7 +43,7 @@ const products = [
         id: 5,
         name: "Boom Rush",
         price: 11999,
-        images: ["shoe5.webp", "shoe5.webp"],
+        images: ["shoe5.webp", "shoe5.5.webp"],
         rating: 4.9,
         reviews: 301,
         description: "Performance sneakers crafted for athletes who demand speed and stability.",
@@ -53,7 +53,7 @@ const products = [
         id: 6,
         name: "Quiet Edge",
         price: 12999,
-        images: ["shoe6.webp", "shoe6.webp"],
+        images: ["shoe6.webp", "shoe6.6.webp"],
         rating: 5.0,
         reviews: 415,
         description: "Luxury edition sneakers featuring premium materials and exceptional comfort.",
@@ -77,7 +77,7 @@ productImage1.src = product.images[0];
 productImage2.src = product.images[1];
 productName.textContent = product.name;
 
-productPrice.textContent = `₹${product.price}`;
+productPrice.textContent = `₹${product.price.toLocaleString("en-IN")}`;
 productRating.textContent = `⭐ ${product.rating} (${product.reviews} Reviews)`;
 
 productDescription.textContent = product.description;
