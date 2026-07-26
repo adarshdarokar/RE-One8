@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Footwear | One8</title>
 
     <link rel="stylesheet" href="../css/footwear.css">
@@ -13,47 +13,124 @@
 
     <header>
 
-    <nav>
+        <nav>
 
-        <div class="left">
-            <a href="#">Featured</a>
-            <a href="#">Women</a>
-            <a href="#">Men</a>
-        </div>
+            <div class="left">
+                <a href="#">Featured</a>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+            </div>
 
-        <div class="center">
-            <a href="../index.html">
-                <img src="../assets/logos/one8.png" alt="One8 Logo" class="logo">
-            </a>
-        </div>
+            <div class="center">
+                <a href="../index.html">
+                    <img src="../assets/logos/one8.png" alt="One8 Logo" class="logo">
+                </a>
+            </div>
 
-        <div class="right">
+            <div class="right">
 
-            <div class="search-box">
+                <div class="search-box">
+                    <img src="../assets/logos/search-icon.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search for products">
+                </div>
 
-                <img src="../assets/logos/search-icon.svg" alt="Search" class="search-icon">
-
-                <input type="text" placeholder="Search for products">
+                <div class="nav-icons">
+                    <img src="../assets/logos/whishlist-icon.svg" alt="" class="nav-icon">
+                    <img src="../assets/logos/user-round.svg" alt="" class="nav-icon">
+                    <img src="../assets/logos/shopping-bag.svg" alt="" class="nav-icon">
+                </div>
 
             </div>
 
-            <div class="nav-icons">
+        </nav>
 
-                <img src="../assets/logos/whishlist-icon.svg" alt="" class="nav-icon">
+    </header>
 
-                <img src="../assets/logos/user-round.svg" alt="" class="nav-icon">
+    <main class="footwear-page">
 
-                <img src="../assets/logos/shopping-bag.svg" alt="" class="nav-icon">
+        <aside class="sidebar">
+
+            <div class="sidebar-header">
+
+                <div class="title-row">
+                    <h1>Footwear - All</h1>
+                    <p>30 Products</p>
+                </div>
 
             </div>
 
-        </div>
+            <div class="filters">
 
-    </nav>
+                <div class="filter-item">
+                    <span>PRICE</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
 
-</header>
+                <div class="filter-item">
+                    <span>GENDER</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>PRODUCT TYPE</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>SIZE</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>CATEGORY</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>COLOR</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>ACTIVITY</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+            </div>
+
+        </aside>
+
+        <section class="products">
+
+            <div class="products-header">
+
+                <div class="sort">
+                </div>
+
+            </div>
+
+            <!-- JS yaha product cards add karega -->
+            <div class="product-grid"></div>
+            <div class="pagination">
+
+                <button class="page-btn prev">Previous</button>
+
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                </div>
+
+                <button class="page-btn next">Next</button>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <script src="../js/footwear.js"></script>
 
 </body>
+
 </html>
