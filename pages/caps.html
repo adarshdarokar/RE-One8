@@ -4,25 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear | One8</title>
 
-    <title>Caps | One8</title>
-
-    <!-- Common CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Page CSS -->
-    <link rel="stylesheet" href="../css/caps.css">
+    <link rel="stylesheet" href="../css/footwear.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-
     <header>
+
         <nav>
 
             <div class="left">
-                <a href="../index.html">Featured</a>
+                <a href="#">Featured</a>
                 <a href="#">Women</a>
                 <a href="#">Men</a>
             </div>
@@ -34,31 +28,100 @@
             </div>
 
             <div class="right">
-                <a href="#">Search</a>
-                <a href="#">Cart</a>
-                <a href="#">Contact</a>
+
+                <div class="search-box">
+                    <img src="../assets/logos/search-icon.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search for products">
+                </div>
+
+                <div class="nav-icons">
+                    <img src="../assets/logos/whishlist-icon.svg" alt="" class="nav-icon">
+                    <img src="../assets/logos/user-round.svg" alt="" class="nav-icon">
+                    <img src="../assets/logos/shopping-bag.svg" alt="" class="nav-icon">
+                </div>
+
             </div>
 
         </nav>
+
     </header>
 
-    <!-- ================= MAIN ================= -->
+    <main class="footwear-page">
 
-    <main>
+        <aside class="sidebar">
 
-        <section class="hero">
+            <div class="sidebar-header">
 
-            <div class="hero-content">
+                <div class="title-row">
+                    <h1>Caps - All</h1>
+                    <p>30 Products</p>
+                </div>
 
-                <h1>Caps Collection</h1>
+            </div>
 
-                <p>
-                    Complete your look with premium caps crafted for comfort, performance, and everyday style.
-                </p>
+            <div class="filters">
 
-                <button class="shop-btn">
-                    Shop Collection
-                </button>
+                <div class="filter-item">
+                    <span>PRICE</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>GENDER</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>PRODUCT TYPE</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>SIZE</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>CATEGORY</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>COLOR</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+                <div class="filter-item">
+                    <span>ACTIVITY</span>
+                    <img src="../assets/logos/drop-down.svg" alt="Dropdown">
+                </div>
+
+            </div>
+
+        </aside>
+
+        <section class="products">
+
+            <div class="products-header">
+
+                <div class="sort">
+                </div>
+
+            </div>
+
+            <!-- JS yaha product cards add karega -->
+            <div class="product-grid"></div>
+            <div class="pagination">
+
+                <button class="page-btn prev">Previous</button>
+
+                <div class="page-numbers">
+                    <button class="page-number active">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number">3</button>
+                </div>
+
+                <button class="page-btn next">Next</button>
 
             </div>
 
@@ -66,9 +129,9 @@
 
     </main>
 
-    <!-- ================= JS ================= -->
-
     <script src="../js/caps.js"></script>
+
+
 
 </body>
 
