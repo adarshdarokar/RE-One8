@@ -1,0 +1,589 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:28px 42px;
+
+    border-bottom:1px solid #e8e8e8;
+}
+
+nav a{
+    text-decoration:none;
+    color:#111;
+
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    font-weight:200;
+
+    letter-spacing:.15px;
+}
+
+nav a:hover{
+    opacity:.75;
+}
+
+/* ---------- Logo ---------- */
+
+.center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.logo{
+    height:60px;
+    width:auto;
+    display:flex;
+    margin-left:320px;
+}
+
+/* ---------- Left Navigation ---------- */
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+/* ---------- Right Navigation ---------- */
+
+.right{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:20px;
+
+    min-width:520px;
+}
+
+/* ---------- Right ---------- */
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+/* ---------- Search Box ---------- */
+
+.search-box{
+    width:275px;
+    height:38px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 16px;
+
+    border:1px solid rgba(0,0,0,.18);
+    border-radius:3px;
+
+    background:transparent;
+
+    transition:all .3s ease;
+}
+
+.search-box:hover{
+    border-color:black;
+}
+
+.search-icon{
+    width:20px;
+    height:20px;
+
+    flex-shrink:0;
+
+    object-fit:contain;
+
+    filter:none;
+}
+
+.search-box input{
+    flex:1;
+    height:100%;
+
+    margin-left:12px;
+
+    border:none;
+    outline:none;
+
+    background:transparent;
+
+    color:black;
+
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:.2px;
+}
+
+.search-box input::placeholder{
+    color:black;
+
+    font-family:"Poppins",sans-serif;
+    font-size:14px;
+    font-weight:500;
+    letter-spacing:.2px;
+}
+
+/* ---------- Icons ---------- */
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.nav-icon{
+    width:30px;
+    height:30px;
+
+    object-fit:contain;
+
+    filter:none;
+
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.nav-icon:hover{
+    opacity:.7;
+    transform:translateY(-1px);
+}
+
+
+
+/* =========================================
+   FILTER DROPDOWN ICON
+========================================= */
+
+.filter-item img{
+    width:18px;
+    height:18px;
+    object-fit:contain;
+    cursor:pointer;
+    transition:transform .25s ease;
+}
+
+.filter-item:hover img{
+    transform:rotate(180deg);
+}
+
+
+
+
+/* ===========================
+   FOOTWEAR PAGE LAYOUT
+=========================== */
+
+.footwear-page{
+    display:flex;
+    gap:30px;
+    padding:28px 40px 0;
+
+    align-items:flex-start;
+}
+
+.sidebar{
+    width:390px;
+    flex-shrink:0;
+
+    position:sticky;
+    top:110px;
+
+    align-self:flex-start;
+}
+
+.products{
+    flex:1;
+    min-width:0;
+
+    display:flex;
+    flex-direction:column;
+}
+/* ===========================
+   PRODUCTS HEADER
+=========================== */
+
+.products-header{
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+
+    height:53px;
+    padding-bottom:12px;
+
+    border-bottom:1px solid #ececec;
+    margin-bottom:18px;
+}
+
+.sort{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    margin-left:auto;
+
+    font-size:13px;
+    font-weight:500;
+
+    color:#111;
+
+    cursor:pointer;
+}
+
+.arrow{
+    font-size:14px;
+    line-height:1;
+}
+
+/* ===========================
+   SIDEBAR HEADER
+=========================== */
+.sidebar-header{
+    display:flex;
+    align-items:flex-end;
+
+    height:53px;          /* same visual height as products header */
+    padding-bottom:12px;
+
+    border-bottom:1px solid #ececec;
+}
+
+.title-row{
+    display:flex;
+    align-items:flex-end;
+    gap:12px;
+
+    width:100%;
+}
+
+.title-row h1{
+    font-size:35px;
+    font-weight:700;
+    line-height:1;
+}
+
+.title-row p{
+    font-size:13px;
+    margin-bottom:2px;
+    color:#777;
+}
+
+/* ===========================
+   FILTERS
+=========================== */
+
+.filters{
+    display:flex;
+    flex-direction:column;
+}
+
+.filter-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    height:52px;
+
+    border-bottom:1px solid #ececec;
+}
+
+.filter-item span:first-child{
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.8px;
+}
+
+.filter-item span:last-child{
+    font-size:16px;
+    font-weight:400;
+}
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:36px 24px;
+}
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.product-card{
+    width:100%;
+}
+
+.product-image{
+    position:relative;
+
+    width:100%;
+    height:360px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f7f7f7;
+    overflow:hidden;
+}
+
+.shoe-image{
+    width:92%;
+    height:auto;
+    object-fit:contain;
+
+    transition:.35s ease;
+}
+
+.product-card:hover .shoe-image{
+    transform:scale(1.05);
+}
+
+/* =========================================
+   BADGE
+========================================= */
+
+.product-badge{
+    position:absolute;
+    top:18px;
+    left:18px;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    font-size:12px;
+    font-weight:700;
+    color:#111;
+}
+
+.badge-dot{
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+    background:#ff5a36;
+}
+
+/* =========================================
+   WISHLIST
+========================================= */
+
+.wishlist-btn{
+    position:absolute;
+    top:18px;
+    right:18px;
+
+    background:none;
+    border:none;
+    padding:0;
+
+    cursor:pointer;
+}
+
+.wishlist-btn img{
+    width:26px;
+    height:26px;
+}
+
+/* =========================================
+   PRODUCT INFO
+========================================= */
+/* =========================================
+   PRODUCT INFO
+========================================= */
+
+.product-info{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    padding:18px 20px 20px;
+    height:170px;
+
+    background:#f7f7f7;
+}
+
+.category{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    color:#7b7b7b;
+}
+
+.product-name{
+    margin-top:6px;
+
+    font-size:18px;
+    font-weight:500;
+    line-height:1.3;
+
+    color:#111;
+}
+
+.price{
+    margin-top:8px;
+
+    font-size:18px;
+    font-weight:700;
+
+    color:#111;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.product-footer{
+    margin-top:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.colors{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.color{
+    width:20px;
+    height:20px;
+
+    border-radius:50%;
+    border:1px solid #d2d2d2;
+
+    cursor:pointer;
+}
+
+/* =========================================
+   CART BUTTON
+========================================= */
+
+.cart-btn{
+    width:44px;
+    height:44px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#ececec;
+
+    border:1px solid #d6d6d6;
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+}
+
+.cart-btn:hover{
+    background:#111;
+    border-color:#111;
+}
+
+.cart-btn img{
+    width:20px;
+    height:20px;
+
+    transition:.25s;
+}
+
+.cart-btn:hover img{
+    filter:invert(1);
+}
+
+
+
+/* =========================================
+   PREMIUM PAGINATION
+========================================= */
+
+.pagination{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin:70px 0 90px;
+    padding-top:30px;
+
+    border-top:1px solid #ececec;
+}
+
+.page-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    background:none;
+    border:none;
+
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:.5px;
+    color:#777;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.page-btn:hover{
+    color:#111;
+}
+
+.page-btn span{
+    font-size:18px;
+}
+
+.page-numbers{
+    display:flex;
+    gap:14px;
+}
+
+.page-number{
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:50%;
+
+    background:transparent;
+
+    font-size:14px;
+    font-weight:600;
+    color:#777;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.page-number:hover{
+    background:#f2f2f2;
+    color:#111;
+}
+
+.page-number.active{
+    background:#111;
+    color:#fff;
+}
