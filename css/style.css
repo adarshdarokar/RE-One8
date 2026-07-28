@@ -685,6 +685,8 @@ nav a:hover{
 .shop-btn:hover {
   letter-spacing: 2px;
 }
+
+
 /* =========================================
    FEATURE SECTION
 ========================================= */
@@ -694,10 +696,8 @@ nav a:hover{
     margin:100px auto;
 
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(2,minmax(0,1fr));
     gap:60px;
-
-    align-items:start;
 }
 
 /* =========================================
@@ -713,6 +713,8 @@ nav a:hover{
 ========================================= */
 
 .feature-image{
+
+    position:relative;
 
     width:100%;
     aspect-ratio:1/1;
@@ -744,10 +746,69 @@ nav a:hover{
     transition:transform .8s cubic-bezier(.19,1,.22,1);
 }
 
-/* Minimal Hover */
+/* =========================================
+   HOVER
+========================================= */
 
 .feature-card:hover .feature-image img{
-
     transform:scale(1.03);
 }
 
+/* =========================================
+   SHOP NOW
+========================================= */
+
+.shop-link{
+
+    position:absolute;
+
+    left:50%;
+    bottom:38px;
+
+    transform:translateX(-50%);
+
+    display:inline-block;
+
+    font-family:"Poppins",sans-serif;
+    font-size:15px;
+    font-weight:500;
+
+    color:rgba(255,255,255,.92);
+
+    text-decoration:none;
+
+    border-bottom:1px solid rgba(255,255,255,.85);
+
+    padding-bottom:3px;
+
+    letter-spacing:.2px;
+
+    z-index:5;
+
+    transition:all .35s ease;
+}
+
+.feature-card:hover .shop-link{
+    color:#fff;
+    border-color:#fff;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.feature-title{
+
+    margin-top:10px;
+
+    text-align:center;
+
+    font-family:"Poppins",sans-serif;
+    font-size:20px;
+    font-weight:800;
+
+    letter-spacing:-0.1px;
+    line-height:1;
+
+    color:#111;
+}
