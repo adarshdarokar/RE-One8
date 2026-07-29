@@ -917,3 +917,754 @@ nav a:hover{
     background:#111;
     color:#fff;
 }
+/* =========================================
+            NEWSLETTER SECTION
+========================================= */
+
+.newsletter-section{
+
+    width:100%;
+
+    background:#1F1F1F;
+
+    padding:58px 56px 36px;
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+
+}
+
+/* =========================================
+            TOP WRAPPER
+========================================= */
+
+.footer-top{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* =========================================
+            HEADING
+========================================= */
+
+.newsletter{
+
+    margin-bottom:42px;
+
+}
+
+.newsletter h2{
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:30px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    line-height:1.2;
+
+    letter-spacing:-.4px;
+
+    margin-bottom:12px;
+
+}
+
+.newsletter p{
+
+    width:650px;
+
+    max-width:100%;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:16px;
+
+    font-weight:400;
+
+    line-height:1.65;
+
+    color:rgba(255,255,255,.78);
+
+}
+
+/* =========================================
+            INPUT ROW
+========================================= */
+
+.newsletter-form{
+
+    display:grid;
+
+    grid-template-columns:minmax(0,1fr) 225px;
+
+    gap:34px;
+
+    align-items:center;
+
+}
+
+/* =========================================
+            INPUT
+========================================= */
+
+.input-box{
+
+    width:100%;
+
+    border-bottom:1px solid rgba(255,255,255,.25);
+
+    padding-bottom:16px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:48px;
+
+    font-weight:600;
+
+    letter-spacing:-1.6px;
+
+    color:#fff;
+
+}
+
+.input-box input::placeholder{
+
+    color:#fff;
+
+    opacity:1;
+
+}
+
+.input-box input:focus::placeholder{
+
+    opacity:.45;
+
+}
+
+/* =========================================
+            BUTTON
+========================================= */
+
+.newsletter-form button{
+
+    width:225px;
+
+    height:54px;
+
+    border:none;
+
+    border-radius:999px;
+
+    background:#18E8EF;
+
+    color:#111;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.newsletter-form button:hover{
+
+    background:#2CEEF4;
+
+    transform:translateY(-2px);
+
+}
+/* =========================================
+                FOOTER
+========================================= */
+
+.footer{
+
+    width:100%;
+
+    background:#1F1F1F;
+
+    overflow:hidden;
+
+}
+
+/* =========================================
+            FOOTER GRID
+========================================= */
+
+.footer-links{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:
+        1.25fr
+        .90fr
+        1.25fr
+        .90fr
+        1.35fr
+        1.45fr;
+
+    column-gap:52px;
+
+    padding:36px 56px 48px;
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+
+}
+
+/* =========================================
+                COLUMN
+========================================= */
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-self:flex-start;
+
+}
+
+/* =========================================
+            COLUMN TITLE
+========================================= */
+
+.footer-column h4{
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    margin:0 0 22px;
+
+}
+
+/* =========================================
+                LINKS
+========================================= */
+
+.footer-column a{
+
+    position:relative;
+
+    width:fit-content;
+
+    text-decoration:none;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:15px;
+
+    font-weight:400;
+
+    line-height:2;
+
+    color:rgba(255,255,255,.82);
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:#fff;
+
+}
+
+.footer-column a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-2px;
+
+    width:0;
+
+    height:1px;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover::after{
+
+    width:100%;
+
+}
+
+/* =========================================
+            COLUMN WIDTHS
+========================================= */
+
+.footer-column:nth-child(1){
+
+    min-width:170px;
+
+}
+
+.footer-column:nth-child(2){
+
+    min-width:110px;
+
+}
+
+.footer-column:nth-child(3){
+
+    min-width:220px;
+
+}
+
+.footer-column:nth-child(4){
+
+    min-width:110px;
+
+}
+
+.footer-column:nth-child(5){
+
+    min-width:220px;
+
+}
+/* =========================================
+            FOLLOW SECTION
+========================================= */
+
+.social-column{
+
+    border-left:1px solid rgba(255,255,255,.10);
+
+    padding-left:42px;
+
+    margin-left:10px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+.social-column h4{
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    margin:0 0 18px;
+
+}
+
+.social-column p{
+
+    width:220px;
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:15px;
+
+    font-weight:400;
+
+    line-height:1.75;
+
+    color:rgba(255,255,255,.82);
+
+    margin:0 0 28px;
+
+}
+
+/* =========================================
+            SOCIAL ICONS
+========================================= */
+
+.social-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.social-icons a{
+
+    width:38px;
+
+    height:38px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    text-decoration:none;
+
+    transition:all .3s ease;
+
+}
+
+.social-icons a:hover{
+
+    background:#18E8EF;
+
+    transform:translateY(-2px);
+
+}
+
+.social-icons img{
+
+    width:18px;
+
+    height:18px;
+
+    object-fit:contain;
+
+    transition:.3s ease;
+
+}
+
+.social-icons a:hover img{
+
+    transform:scale(.9);
+
+    filter:brightness(0);
+
+}
+
+/* Individual icon sizing */
+
+.social-icons a:nth-child(1) img{
+
+    width:10px;
+
+}
+
+.social-icons a:nth-child(2) img{
+
+    width:17px;
+
+}
+
+.social-icons a:nth-child(3) img{
+
+    width:17px;
+
+}
+
+.social-icons a:nth-child(4) img{
+
+    width:16px;
+
+}
+
+.social-icons a:nth-child(5) img{
+
+    width:18px;
+
+}
+/* =========================================
+            FOOTER BOTTOM
+========================================= */
+
+.footer-bottom{
+
+    width:100%;
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 56px;
+
+    background:#1F1F1F;
+
+}
+
+/* =========================================
+            COPYRIGHT
+========================================= */
+
+.footer-bottom p{
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:14px;
+
+    font-weight:400;
+
+    color:rgba(255,255,255,.72);
+
+    margin:0;
+
+}
+
+/* =========================================
+            PAYMENT WRAPPER
+========================================= */
+
+.payment-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/* =========================================
+            PAYMENT ICONS
+========================================= */
+
+.payment-icons img{
+
+    display:block;
+
+    width:auto;
+
+    height:28px;
+
+    object-fit:contain;
+
+    transition:.3s ease;
+
+    opacity:.98;
+
+}
+
+.payment-icons img:hover{
+
+    transform:translateY(-2px);
+
+    opacity:1;
+
+}
+
+/* =========================================
+        INDIVIDUAL ICON HEIGHTS
+========================================= */
+
+.payment-icons img:nth-child(1){
+
+    height:26px;
+
+}
+
+.payment-icons img:nth-child(2){
+
+    height:26px;
+
+}
+
+.payment-icons img:nth-child(3){
+
+    height:27px;
+
+}
+
+.payment-icons img:nth-child(4){
+
+    height:26px;
+
+}
+
+.payment-icons img:nth-child(5){
+
+    height:25px;
+
+}
+
+.payment-icons img:nth-child(6){
+
+    height:26px;
+
+}
+/* =========================================
+            PREMIUM POLISH
+========================================= */
+
+/* Smooth Rendering */
+
+.newsletter h2,
+.footer-column h4,
+.footer-column a,
+.footer-bottom p,
+.newsletter-form button{
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+/* =========================================
+            INPUT
+========================================= */
+
+.input-box{
+
+    transition:border-color .35s ease;
+
+}
+
+.input-box:hover{
+
+    border-bottom-color:rgba(255,255,255,.45);
+
+}
+
+.input-box:focus-within{
+
+    border-bottom-color:#18E8EF;
+
+}
+
+.input-box input{
+
+    caret-color:#18E8EF;
+
+}
+
+.input-box input::placeholder{
+
+    transition:opacity .3s ease;
+
+}
+
+.input-box input:focus::placeholder{
+
+    opacity:.4;
+
+}
+
+/* =========================================
+            BUTTON
+========================================= */
+
+.newsletter-form button{
+
+    box-shadow:none;
+
+}
+
+.newsletter-form button:hover{
+
+    background:#25EEF4;
+
+    box-shadow:0 10px 28px rgba(24,232,239,.18);
+
+}
+
+.newsletter-form button:active{
+
+    transform:scale(.98);
+
+}
+
+/* =========================================
+            LINKS
+========================================= */
+
+.footer-column a{
+
+    transition:color .25s ease;
+
+}
+
+.footer-column a:hover{
+
+    color:#fff;
+
+}
+
+/* =========================================
+            SOCIAL
+========================================= */
+
+.social-icons a{
+
+    box-shadow:none;
+
+}
+
+.social-icons a:hover{
+
+    box-shadow:0 8px 18px rgba(24,232,239,.22);
+
+}
+
+/* =========================================
+            PAYMENT
+========================================= */
+
+.payment-icons img{
+
+    transition:transform .25s ease, opacity .25s ease;
+
+}
+
+.payment-icons img:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================================
+            DESKTOP FIX
+========================================= */
+
+.newsletter-section,
+.footer,
+.footer-bottom{
+
+    min-width:1280px;
+
+}
