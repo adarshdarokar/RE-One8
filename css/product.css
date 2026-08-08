@@ -83,7 +83,6 @@ nav a{
 /* ===========================
    LEFT IMAGE SECTION
 =========================== */
-
 .product-image{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -91,7 +90,6 @@ nav a{
 }
 
 .image-card{
-
     background:#f5f5f5;
 
     height:720px;
@@ -101,33 +99,30 @@ nav a{
     overflow:hidden;
 
     display:flex;
-
     justify-content:center;
+    align-items:center;
 
-    align-items:flex-end;
-
-    padding-bottom:70px;
+    padding:40px;
 
     transition:.35s ease;
 }
 
 .image-card:hover{
-
     background:#f2f2f2;
 }
 
 .image-card img{
-
-    width:94%;
-    height:auto;
+    width:100%;
+    height:100%;
 
     object-fit:contain;
+
+    display:block;
 
     transition:.4s ease;
 }
 
 .image-card:hover img{
-
     transform:scale(1.02);
 }
 
